@@ -1,0 +1,54 @@
+{
+    "accounts": [
+      {
+        "id": 1,
+        "name": "Banco do Brasil - Conta Corrente",
+        "balance": 5000
+      },
+      {
+        "id": 2,
+        "name": "Caixa Econômica Federal - Poupança",
+        "balance": 10000
+      },
+      {
+        "id": 3,
+        "name": "Itaú - Conta Corrente",
+        "balance": 3000
+      }
+    ],
+    "expenses": [
+      {
+        "id": 1,
+        "name": "Aluguel",
+        "amount": 1000
+      },
+      {
+        "id": 2,
+        "name": "Supermercado",
+        "amount": 500
+      },
+      {
+        "id": 3,
+        "name": "Transporte",
+        "amount": 200
+      }
+    ],
+    "investments": [
+      {
+        "id": 1,
+        "name": "Tesouro Direto",
+        "value": 20000
+      },
+      {
+        "id": 2,
+        "name": "Ações",
+        "value": 5000
+      },
+      {
+        "id": 3,
+        "name": "Fundos Imobiliários",
+        "value": 10000
+      }
+    ]
+  }
+  

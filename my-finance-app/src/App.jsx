@@ -1,24 +1,25 @@
-import './App.css'
-import Title from './components/Title'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Accounts from './components/Accounts';
+import Expenses from './components/Expenses';
+import Investments from './components/Investments';
+import Footer from './components/Footer';
 
-// function App() {
-//   return ()
-// }
-// export default App
-
-function sum(a, b) {
-  return a + b
-}
-
-export default function App() {
-  const status = true
-  
-  
+const App = () => {
   return (
-      <div>
-          <Title/>
-          <h2>Its easy, like 1 + 1 is {sum(1, 1)}</h2>
-          <h2>Current status: {status ? "ON": "OFF"}</h2>
-      </div>
-  )
-}
+    <Router>
+      <Header />
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Accounts />} />
+        <Route path="/despesas" element={<Expenses />} />
+        <Route path="/investimentos" element={<Investments />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+};
+
+export default App;
